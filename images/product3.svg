@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'>
+  <rect width='600' height='600' fill='#181818'/>
+  <path d='M140 380c40-120 280-120 320 0' stroke='#f5c15c' stroke-width='26' stroke-linecap='round' fill='none'/>
+  <text x='50%' y='66%' font-family='Roboto,Arial,sans-serif' font-size='42' fill='#fff' text-anchor='middle'>P3</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'>
+  <rect width='600' height='600' fill='#1d1d1d'/>
+  <circle cx='300' cy='280' r='140' fill='#f5c15c' opacity='0.9'/>
+  <text x='50%' y='72%' font-family='Roboto,Arial,sans-serif' font-size='42' fill='#fff' text-anchor='middle'>P1</text>
+</svg>
