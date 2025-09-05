@@ -3,160 +3,287 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shubh Sales | Mattresses, Furnishings & Handloom Store</title>
-    <meta name="description" content="Shubh Sales - Premium mattresses, furnishings, and handloom products. Comfort, style, and durability for your home. Explore our curated range today." />
+    <title>Shubh Sales | Home Furnishings, Mattresses & Handloom</title>
+    <meta name="description" content="Shubh Sales - Modern & handloom blend: mattresses, furnishings, decor. Trending & best seller products with fast delivery." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <!-- Geist (fallback to system sans if unavailable) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Sb0A8Z3Y6Kycd+Y6z3Y0JVpaz6RtWLpmjHtkobaN6D+PfYZ7R6pujISiFDUFxIr05oig3NbS1Ry6j3Tz7R6POg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header class="site-header" id="top">
-        <div class="container nav-wrapper">
-            <div class="logo">Shubh <span>Sales</span></div>
+    <!-- HEADER -->
+    <header class="header" id="top">
+        <div class="container header__bar">
+            <a href="#top" class="brand" aria-label="Shubh Sales Home">Shubh<span>Sales</span></a>
             <nav class="nav" aria-label="Main Navigation">
-                <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <button class="nav__toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
                 </button>
-                <ul class="nav-links">
+                <ul class="nav__list">
                     <li><a href="#top" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
+                    <li><a href="#trending">Collection</a></li>
+                    <li><a href="#best-sellers">Best Sellers</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <a href="#contact" class="btn btn--ghost small hide-mobile">Get in touch</a>
         </div>
     </header>
 
-    <section class="hero" role="banner" aria-label="Hero section with store introduction">
-        <div class="hero-overlay"></div>
-        <img src="images/hero.jpg" alt="Comfortable furnished bedroom with premium mattress" class="hero-bg" />
-        <div class="hero-content container">
-            <h1>Shubh Sales</h1>
-            <p class="tagline">Comfort, Style, and Durability for Your Home</p>
-            <a href="#products" class="btn primary">Explore Products</a>
+    <!-- HERO / SLIDER -->
+    <section class="hero" aria-label="Promotions slider">
+        <div class="hero__slides" data-slider>
+            <div class="hero__slide is-active" aria-roledescription="slide">
+                <div class="hero__media">
+                      <img src="images/hero.svg" alt="Minimal beige sofa in bright living room" />
+                </div>
+                <div class="hero__content container">
+                    <p class="eyebrow">Quick parcel delivery <span class="from">from ₹25</span></p>
+                    <h1 class="hero__title">Minimal comfort furniture <br><span class="accent">Extra 50% off now!</span></h1>
+                    <div class="hero__cta">
+                        <a href="#trending" class="btn">Start Shopping</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Duplicate slide placeholder (optional) -->
+            <div class="hero__slide" aria-roledescription="slide">
+                <div class="hero__media alt">
+                      <img src="images/product2.svg" alt="Curtain set draped in sunlit interior" />
+                </div>
+                <div class="hero__content container">
+                    <p class="eyebrow">New arrivals</p>
+                    <h2 class="hero__title">Handloom & Modern Fusion</h2>
+                    <div class="hero__cta">
+                        <a href="#best-sellers" class="btn btn--light">Explore Best Sellers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots" data-dots aria-label="Slider pagination"></div>
+    </section>
+
+    <!-- TRENDING PRODUCTS -->
+    <section class="section dark" id="trending" aria-labelledby="trend-heading">
+        <div class="container">
+            <h2 id="trend-heading" class="section__title">Trending Products</h2>
+            <div class="products products--row">
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product1.svg" alt="Arcandere Chair" loading="lazy" /></div>
+                    <h3 class="product__name">Arcandere Chair</h3>
+                    <div class="product__price"><span class="price--new">₹5,990</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product2.svg" alt="Stainless steel teapot" loading="lazy" /></div>
+                    <h3 class="product__name">Stainless steel teapot</h3>
+                    <div class="product__price"><span class="price--new">₹890</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product3.svg" alt="Beoplay audio speaker" loading="lazy" /></div>
+                    <h3 class="product__name">Beoplay</h3>
+                    <div class="product__price"><span class="price--old">₹2,590</span><span class="price--new">₹1,990</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product4.svg" alt="Turning table" loading="lazy" /></div>
+                    <h3 class="product__name">Turning table</h3>
+                    <div class="product__price"><span class="price--new">₹7,900</span></div>
+                </article>
+            </div>
         </div>
     </section>
 
-    <main>
-        <section class="featured-products section" id="products" aria-labelledby="featured-heading">
-            <div class="container">
-                <div class="section-head">
-                    <h2 id="featured-heading">Featured Products</h2>
-                    <p class="subtitle">A curated glimpse of our range — mattresses, furnishings & handloom pieces.</p>
-                </div>
-                <div class="product-grid">
-                    <article class="product-card" tabindex="0">
-                        <div class="img-wrap">
-                            <img src="images/product1.jpg" alt="Premium orthopedic mattress" />
-                        </div>
-                        <div class="product-info">
-                            <h3>Orthopedic Mattress</h3>
-                            <p>Ergonomic support for restful sleep.</p>
-                            <div class="price">₹12,499</div>
-                        </div>
-                    </article>
-                    <article class="product-card" tabindex="0">
-                        <div class="img-wrap">
-                            <img src="images/product2.jpg" alt="Elegant curtain set" />
-                        </div>
-                        <div class="product-info">
-                            <h3>Designer Curtains</h3>
-                            <p>Light-filtering fabrics in modern patterns.</p>
-                            <div class="price">₹2,199</div>
-                        </div>
-                    </article>
-                    <article class="product-card" tabindex="0">
-                        <div class="img-wrap">
-                            <img src="images/product3.jpg" alt="Handloom cotton bedsheet" />
-                        </div>
-                        <div class="product-info">
-                            <h3>Handloom Bedsheet</h3>
-                            <p>Soft, breathable & artisan crafted.</p>
-                            <div class="price">₹1,299</div>
-                        </div>
-                    </article>
-                    <article class="product-card" tabindex="0">
-                        <div class="img-wrap">
-                            <img src="images/product4.jpg" alt="Decorative cushion cover set" />
-                        </div>
-                        <div class="product-info">
-                            <h3>Cushion Cover Set</h3>
-                            <p>Add texture & color to your space.</p>
-                            <div class="price">₹799</div>
-                        </div>
-                    </article>
-                </div>
-                <div class="center">
-                    <a href="#products" class="btn outline">View More</a>
+    <!-- PROMO MOSAIC -->
+    <section class="section mosaic" aria-label="Promotional collections">
+        <div class="container mosaic__grid">
+            <div class="tile" aria-label="Interior Home Décor promo">
+                <div class="tile__inner">
+                    <p class="eyebrow small">Quick parcel delivery <span class="from">from ₹25</span></p>
+                    <h3>Interior Home Decor</h3>
+                    <p class="tile__text">Discover our exquisite interior decor collections</p>
+                    <a href="#trending" class="btn btn--sm">Start Shopping</a>
                 </div>
             </div>
-        </section>
+            <div class="tile alt" aria-label="Pendant Lamp discount">
+                <div class="tile__inner">
+                    <p class="eyebrow small">Quick parcel delivery <span class="from">from ₹25</span></p>
+                    <h3>Up to 70% off<br>Pendant Lamp</h3>
+                    <p class="tile__text">Elegant interior lighting collection</p>
+                    <a href="#trending" class="btn btn--sm">Start Shopping</a>
+                </div>
+            </div>
+            <div class="tile light" aria-label="Wood chair collection">
+                <div class="tile__inner">
+                    <h3>Wood chair</h3>
+                    <p class="tile__text">Classic & modern blend</p>
+                    <a class="btn btn--ghost btn--sm" href="#best-sellers">View</a>
+                </div>
+            </div>
+            <div class="tile mini" aria-label="Mini table offer">
+                <div class="tile__inner">
+                    <h3>Mini table</h3>
+                    <p class="tile__text">New table collection<br><span class="discount">Extra 10% off</span></p>
+                    <a href="#best-sellers" class="link-underline">Explore</a>
+                </div>
+            </div>
+            <div class="tile wide" aria-label="Sofa sale banner">
+                <div class="tile__inner">
+                    <h3>Sofa</h3>
+                    <p class="tile__text">Luxurious sofa selection<br><span class="discount">Extra 20% off</span></p>
+                    <a href="#best-sellers" class="link-underline">Browse</a>
+                </div>
+            </div>
+            <div class="tile hero-alt" aria-label="Hanging chair collection">
+                <div class="tile__inner center">
+                    <p class="eyebrow small">Quick parcel delivery <span class="from">from ₹25</span></p>
+                    <h3>Shop the new products<br>Up to <span class="accent">40% off</span> now</h3>
+                    <a href="#trending" class="btn btn--light btn--sm">Start Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="why-us section alt" id="about" aria-labelledby="why-heading">
-            <div class="container">
-                <div class="section-head">
-                    <h2 id="why-heading">Why Choose Us</h2>
-                    <p class="subtitle">Blending modern comfort with traditional craftsmanship.</p>
-                </div>
-                <div class="reasons-grid">
-                    <div class="reason" tabindex="0">
-                        <div class="icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
-                        <h3>Quality Products</h3>
-                        <p>Carefully sourced materials & trusted brands.</p>
-                    </div>
-                    <div class="reason" tabindex="0">
-                        <div class="icon"><i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i></div>
-                        <h3>Affordable Prices</h3>
-                        <p>Value-driven pricing without compromise.</p>
-                    </div>
-                    <div class="reason" tabindex="0">
-                        <div class="icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
-                        <h3>Trusted Service</h3>
-                        <p>Friendly consultation & after-sales support.</p>
-                    </div>
-                    <div class="reason" tabindex="0">
-                        <div class="icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></div>
-                        <h3>Modern + Handloom Blend</h3>
-                        <p>A curation of contemporary & artisan designs.</p>
-                    </div>
-                </div>
+    <!-- BEST SELLERS -->
+    <section class="section dark" id="best-sellers" aria-labelledby="best-heading">
+        <div class="container">
+            <h2 id="best-heading" class="section__title">Best seller products</h2>
+            <div class="products products--grid">
+                <!-- Reuse product component -->
+                <article class="product" tabindex="0">
+                    <span class="badge">SALE</span>
+                      <div class="product__img"><img src="images/product1.svg" alt="Arcandere Chair" loading="lazy" /></div>
+                    <h3 class="product__name">Arcandere Chair</h3>
+                    <div class="product__price"><span class="price--old">₹6,500</span><span class="price--new">₹5,990</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                    <span class="badge">SALE</span>
+                      <div class="product__img"><img src="images/product2.svg" alt="Stainless steel teapot" loading="lazy" /></div>
+                    <h3 class="product__name">Stainless steel teapot</h3>
+                    <div class="product__price"><span class="price--old">₹1,050</span><span class="price--new">₹890</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                    <span class="badge">SALE</span>
+                      <div class="product__img"><img src="images/product3.svg" alt="Beoplay speaker" loading="lazy" /></div>
+                    <h3 class="product__name">Beoplay</h3>
+                    <div class="product__price"><span class="price--old">₹2,590</span><span class="price--new">₹1,990</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product4.svg" alt="Turning table" loading="lazy" /></div>
+                    <h3 class="product__name">Turning table</h3>
+                    <div class="product__price"><span class="price--new">₹7,900</span></div>
+                </article>
+                <!-- extra sample products -->
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product1.svg" alt="Side table" loading="lazy" /></div>
+                    <h3 class="product__name">Side table</h3>
+                    <div class="product__price"><span class="price--old">₹1,590</span><span class="price--new">₹1,090</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product2.svg" alt="Outdoor chair" loading="lazy" /></div>
+                    <h3 class="product__name">Outdoor chair</h3>
+                    <div class="product__price"><span class="price--old">₹6,500</span><span class="price--new">₹5,500</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product3.svg" alt="Dining table" loading="lazy" /></div>
+                    <h3 class="product__name">Dining table</h3>
+                    <div class="product__price"><span class="price--new">₹9,900</span></div>
+                </article>
+                <article class="product" tabindex="0">
+                      <div class="product__img"><img src="images/product4.svg" alt="Swing chair" loading="lazy" /></div>
+                    <h3 class="product__name">Swing chair</h3>
+                    <div class="product__price"><span class="price--old">₹3,500</span><span class="price--new">₹2,900</span></div>
+                </article>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="site-footer" id="contact">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <div class="logo small">Shubh <span>Sales</span></div>
-                <p>Comfort, style & durability — always.</p>
+    <!-- NEWSLETTER -->
+    <section class="section newsletter" aria-labelledby="news-heading">
+        <div class="container newsletter__box">
+            <h2 id="news-heading">Subscribe To Our Newsletter</h2>
+            <p class="lead">Sign up for weekly updates and build a better home experience.</p>
+            <form class="newsletter__form" action="#" method="post" aria-label="Subscribe form">
+                <label for="email" class="sr-only">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                <button type="submit" class="btn small">Start Shopping</button>
+            </form>
+            <p class="privacy">We respect your privacy. Your info stays with us.</p>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM FEED -->
+    <section class="section insta" aria-labelledby="insta-heading">
+        <div class="container">
+            <h2 id="insta-heading" class="section__title center">Follow us on Instagram</h2>
+            <p class="insta__handle center">@shubhsales</p>
+            <div class="insta__grid">
+            <div class="insta__item"><img src="images/product1.svg" alt="Instagram preview 1" loading="lazy" /></div>
+            <div class="insta__item"><img src="images/product2.svg" alt="Instagram preview 2" loading="lazy" /></div>
+            <div class="insta__item"><img src="images/product3.svg" alt="Instagram preview 3" loading="lazy" /></div>
+            <div class="insta__item"><img src="images/product4.svg" alt="Instagram preview 4" loading="lazy" /></div>
+            <div class="insta__item"><img src="images/product1.svg" alt="Instagram preview 5" loading="lazy" /></div>
+            <div class="insta__item"><img src="images/product2.svg" alt="Instagram preview 6" loading="lazy" /></div>
             </div>
-            <nav class="footer-nav" aria-label="Footer navigation">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <h4>Connect</h4>
-                <ul class="social-links">
-                    <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="container footer__top">
+            <div class="footer__brand">
+                <a href="#top" class="brand">Shubh<span>Sales</span></a>
+                <p class="muted">Modern + handloom home comfort.</p>
+            </div>
+            <div class="footer__cols">
+                <div class="col">
+                    <h4>Brand</h4>
+                    <ul>
+                        <li><a href="#trending">Collection</a></li>
+                        <li><a href="#best-sellers">Best Sellers</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@shubhsales.com">contact@shubhsales.com</a></li>
+                        <li><a href="tel:+911234567890">+91 1234567890</a></li>
+                        <li class="social-inline">
+                            <a aria-label="Instagram" href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                            <a aria-label="WhatsApp" href="https://wa.me/" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container bottom__bar">
+                <p>&copy; <span id="year"></span> Shubh Sales. All rights reserved.</p>
+                <ul class="legal">
+                    <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
                 </ul>
             </div>
         </div>
-        <div class="copyright">&copy; <span id="year"></span> Shubh Sales. All rights reserved.</div>
     </footer>
 
-    <button class="scroll-top" aria-label="Scroll to top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="js/scripts.js"></script>
 </body>
