@@ -69,7 +69,7 @@ const io = new IntersectionObserver(entries => {
     }
   });
 },{ threshold:0.15 });
-document.querySelectorAll('.section, .product, .tile, .insta__item').forEach(el => {
+document.querySelectorAll('.section, .product, .tile, .insta__item, .collection-card').forEach(el => {
   el.classList.add('fade-in');
   io.observe(el);
 });
